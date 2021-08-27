@@ -167,11 +167,34 @@ img {
 }
 
 .header-mail {
-  display: block;
+  display: flex;
+}
+
+.header-mail::before {
+  content: '';
+  fill: var(--secondary-text-color);
+}
+
+.envelope {
+  margin-right: 10px;
+  caret-color: var(--secondary-text-color);
+}
+
+.header-mail:hover .envelope {
+  fill: var(--accent-color);
 }
 
 .header-tel {
-  display: block;
+  display: flex;
+}
+
+.smartphone {
+  margin-right: 10px;
+  caret-color: var(--secondary-text-color);
+}
+
+.header-tel:hover .smartphone {
+  fill: var(--accent-color);
 }
 
 /* --------------HERO------------------ */
@@ -180,6 +203,12 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/img-min.jpg);
+  width: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-heading {
