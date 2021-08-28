@@ -177,7 +177,7 @@ img {
 
 .envelope {
   margin-right: 10px;
-  caret-color: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
 }
 
 .header-mail:hover .envelope {
@@ -190,7 +190,7 @@ img {
 
 .smartphone {
   margin-right: 10px;
-  caret-color: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
 }
 
 .header-tel:hover .smartphone {
@@ -206,6 +206,8 @@ img {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/img-min.jpg);
   width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -255,6 +257,42 @@ img {
 
 .benefits-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.antenna {
+  background-color: #f5f4fa;
+  height: 120px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.clock {
+  background-color: #f5f4fa;
+  height: 120px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.diagram {
+  background-color: #f5f4fa;
+  height: 120px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.astronaut {
+  background-color: #f5f4fa;
+  height: 120px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
 }
 
 .benefits-heading {
