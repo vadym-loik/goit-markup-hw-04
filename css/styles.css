@@ -181,7 +181,8 @@ img {
   fill: var(--secondary-text-color);
 }
 
-.header-mail:hover .envelope {
+.header-mail:hover .envelope,
+.header-mail:focus .envelope {
   fill: var(--accent-color);
 }
 
@@ -194,7 +195,8 @@ img {
   fill: var(--secondary-text-color);
 }
 
-.header-tel:hover .smartphone {
+.header-tel:hover .smartphone,
+.header-tel:focus .smartphone {
   fill: var(--accent-color);
 }
 
@@ -206,7 +208,7 @@ img {
   padding-bottom: 200px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/img-min.jpg);
-  width: 1600px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -237,11 +239,6 @@ img {
   border-radius: 4px;
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: var(--primary-white-color);
-  color: var(--accent-color);
-}
 /* ------------------main--------------------- */
 /* ------------------BENEFITS------------------ */
 .benefits {
@@ -260,12 +257,14 @@ img {
   margin-right: 30px;
 }
 
-.benefits-icon {
+.icon-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #f5f4fa;
   height: 120px;
   width: 100%;
   border-radius: 4px;
-  padding: 25px 100px;
   margin-bottom: 30px;
 }
 
@@ -429,8 +428,8 @@ img {
   fill: var(--primary-link-color);
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
